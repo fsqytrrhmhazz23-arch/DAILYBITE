@@ -1,0 +1,6 @@
+{
+  "name": "PT. Dailybite",
+  "description": "Company profile for PT. Dailybite, a premium healthy catering and meal box service in Indonesia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
