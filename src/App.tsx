@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { MessageCircle } from 'lucide-react';
 import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -74,6 +75,24 @@ export default function App() {
 
       {/* Corporate Professional Footer */}
       <Footer />
+
+      {/* Floating WhatsApp Chat CTA (Replaces previous Asisten AI concept) */}
+      <a
+        href="https://wa.me/6285819343733?text=Halo%20Admin%20PT.%20Dailybite%2C%20saya%20ingin%20berkonsultasi%20gizi%20dan%20bertanya%20tentang%20program%20katering%20sehat."
+        target="_blank"
+        rel="noreferrer"
+        className="fixed bottom-6 right-6 z-50 flex items-center gap-2.5 bg-[#25D366] hover:bg-editorial-black text-white px-5 py-3.5 shadow-xl transition-all duration-300 hover:scale-105 group border-2 border-editorial-black"
+        id="floating-wa-btn"
+      >
+        <span className="relative flex h-3 w-3">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-white opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+        </span>
+        <MessageCircle className="h-4 w-4 shrink-0" />
+        <span className="text-[10px] font-bold tracking-[0.2em] uppercase font-sans">
+          Tanya Kami (WA)
+        </span>
+      </a>
     </div>
   );
 }
