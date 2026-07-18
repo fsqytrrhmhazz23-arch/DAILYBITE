@@ -20,6 +20,15 @@ export default function Footer() {
               <strong>PT. Dailybite Nusantara</strong> adalah pelopor penyedia layanan katering gizi premium berbasis sains pangan di Indonesia. Berkomitmen menciptakan diet harian seimbang demi memelihara kesehatan metabolik jangka panjang secara paripurna.
             </p>
 
+            <div className="pt-2">
+              <a
+                href="#student-profile"
+                className="inline-flex items-center space-x-2 border border-editorial-terracotta bg-editorial-terracotta hover:bg-white hover:text-editorial-black text-white text-[10px] font-bold tracking-widest uppercase px-4 py-2.5 transition-all duration-300"
+              >
+                <span>TENTANG KAMI / ABOUT US</span>
+              </a>
+            </div>
+
             <div className="flex items-center space-x-2.5 text-[9px] bg-white/5 px-3 py-2 border border-white/10 w-fit font-mono tracking-wider">
               <ShieldCheck className="h-4 w-4 text-editorial-terracotta shrink-0" />
               <span className="text-editorial-cream/90 uppercase">
@@ -44,11 +53,11 @@ export default function Footer() {
           <div className="lg:col-span-2 space-y-4">
             <h4 className="text-[10px] font-bold text-white uppercase tracking-[0.2em] border-b border-white/10 pb-2">Perusahaan</h4>
             <ul className="space-y-2.5 text-xs font-sans">
+              <li><a href="#student-profile" className="hover:text-editorial-terracotta transition-colors font-bold text-white">Tentang Kami / About Us</a></li>
               <li><a href="#about" className="hover:text-editorial-terracotta transition-colors">Tentang PT. Dailybite</a></li>
               <li><a href="#about" className="hover:text-editorial-terracotta transition-colors">Visi & Misi Bisnis</a></li>
               <li><a href="#about" className="hover:text-editorial-terracotta transition-colors">4 Komitmen Utama</a></li>
               <li><a href="#contact" className="hover:text-editorial-terracotta transition-colors">Karir & Internship</a></li>
-              <li><a href="#contact" className="hover:text-editorial-terracotta transition-colors">Kontak Hubungan Pers</a></li>
             </ul>
           </div>
 
@@ -75,18 +84,37 @@ export default function Footer() {
 
         </div>
 
+        {/* Academic UAS Statement Banner */}
+        <div className="mt-8 pt-8 border-t border-white/10 grid grid-cols-1 md:grid-cols-2 gap-4 items-center text-xs text-left">
+          <div className="space-y-2 bg-white/5 border border-white/10 p-4">
+            <p className="text-[10px] font-bold text-editorial-terracotta uppercase tracking-widest">AKADEMIK DISCLOSURE</p>
+            <p className="text-white/90 leading-relaxed font-sans">
+              Website ini dibuat sebagai <strong>Ujian Akhir Semester Mata Kuliah Aplikasi Komputer Bisnis</strong> kampus <strong>STIE Ekadharma Indonesia</strong>.
+            </p>
+          </div>
+          <div className="space-y-2 bg-white/5 border border-white/10 p-4 font-sans text-white/90">
+            <p className="text-[10px] font-bold text-editorial-terracotta uppercase tracking-widest font-mono">IDENTITAS MAHASISWA</p>
+            <div className="grid grid-cols-2 gap-x-4 gap-y-1 text-xs">
+              <div><span className="text-white/50 block text-[9px] uppercase">NAMA LENGKAP:</span><strong className="text-white">Fisqiya turrohmah azzahra</strong></div>
+              <div><span className="text-white/50 block text-[9px] uppercase">NIM:</span><strong className="text-white">11250011</strong></div>
+              <div><span className="text-white/50 block text-[9px] uppercase">SEMESTER:</span><strong className="text-white">Semester 2</strong></div>
+              <div><span className="text-white/50 block text-[9px] uppercase font-mono">KELAS:</span><strong className="text-white">Kelas Reguler C</strong></div>
+            </div>
+          </div>
+        </div>
+
         {/* Bottom Bar - Copyrights */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between text-[10px] space-y-4 sm:space-y-0 text-editorial-cream/40 uppercase tracking-widest font-mono">
+        <div className="pt-8 mt-8 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between text-[10px] space-y-4 sm:space-y-0 text-editorial-cream/40 uppercase tracking-widest font-mono">
           <p>© 2026 PT. Dailybite Nusantara. All Rights Reserved.</p>
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4">
-            <a href="#about" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="#student-profile" className="hover:text-white transition-colors">About Us / Tentang Kami</a>
             <span>•</span>
-            <a href="#about" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#about" className="hover:text-white transition-colors">PT. Dailybite</a>
             <span>•</span>
             <div className="flex items-center space-x-1">
               <span>Made for</span>
               <Heart className="h-3 w-3 fill-editorial-terracotta text-editorial-terracotta" />
-              <span>Indonesia Sehat</span>
+              <span>STIE Ekadharma Indonesia</span>
             </div>
           </div>
         </div>

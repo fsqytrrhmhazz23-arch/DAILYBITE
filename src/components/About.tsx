@@ -1,5 +1,6 @@
-import { ShieldCheck, HeartPulse, Sparkles, ChefHat, Leaf, FileText } from 'lucide-react';
+import { ShieldCheck, HeartPulse, Sparkles, ChefHat, Leaf, FileText, GraduationCap, BookOpen } from 'lucide-react';
 import { CERTIFICATIONS } from '../data/companyData';
+import fisqiyaPhoto from '../assets/images/fisqiya_profile_1784352733670.jpg';
 
 export default function About() {
   const pillars = [
@@ -125,6 +126,79 @@ export default function About() {
                   </span>
                 </div>
               ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Developer / Student Profile Section */}
+        <div id="student-profile" className="mt-20 border-t border-editorial-black pt-20">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            {/* Student Photo Column (4 cols) */}
+            <div className="lg:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left space-y-4">
+              <div className="relative aspect-square w-full max-w-[280px] bg-white border-[6px] border-editorial-black shadow-lg overflow-hidden group">
+                <img
+                  src={fisqiyaPhoto}
+                  alt="Fisqiya turrohmah azzahra"
+                  referrerPolicy="no-referrer"
+                  className="w-full h-full object-cover grayscale-[10%] contrast-[105%] transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105"
+                />
+                <div className="absolute inset-x-0 bottom-0 bg-editorial-black/80 text-white text-[9px] font-bold uppercase tracking-widest text-center py-2">
+                  DIPERIKSA MAHASISWA ASLI
+                </div>
+              </div>
+              <div className="space-y-1">
+                <p className="text-sm font-serif italic text-editorial-black font-semibold">Fisqiya turrohmah azzahra</p>
+                <p className="text-[9px] font-bold text-editorial-black/50 uppercase tracking-widest">NIM. 11250011</p>
+              </div>
+            </div>
+
+            {/* Student Academic Info Column (8 cols) */}
+            <div className="lg:col-span-8 text-left space-y-6">
+              <div className="inline-flex items-center space-x-1.5 border border-editorial-black px-3 py-1 bg-editorial-tan/40 text-editorial-black text-[10px] font-bold tracking-widest uppercase">
+                <GraduationCap className="h-4 w-4 text-editorial-terracotta" />
+                <span>AKADEMIK & SERTIFIKASI MAHASISWA</span>
+              </div>
+              
+              <h3 className="text-3xl sm:text-4xl font-serif font-light tracking-tight text-editorial-black leading-tight">
+                Profil Pengembang & <span className="font-bold text-editorial-terracotta italic block sm:inline">Kreator Sistem</span>
+              </h3>
+
+              {/* Grid of academic details */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 border-t border-b border-editorial-black/20 py-6">
+                <div className="space-y-1">
+                  <span className="text-[9px] font-bold text-editorial-black/40 uppercase tracking-widest">Nama Lengkap</span>
+                  <p className="text-sm font-serif italic font-bold text-editorial-black">Fisqiya turrohmah azzahra</p>
+                </div>
+                <div className="space-y-1">
+                  <span className="text-[9px] font-bold text-editorial-black/40 uppercase tracking-widest">Nomor Induk Mahasiswa</span>
+                  <p className="text-sm font-mono font-bold text-editorial-black">11250011</p>
+                </div>
+                <div className="space-y-1 pt-2 border-t border-editorial-black/10 sm:border-none">
+                  <span className="text-[9px] font-bold text-editorial-black/40 uppercase tracking-widest font-sans">Semester & Program</span>
+                  <p className="text-sm font-serif italic font-bold text-editorial-black">Semester 2 (Dua)</p>
+                </div>
+                <div className="space-y-1 pt-2 border-t border-editorial-black/10 sm:border-none">
+                  <span className="text-[9px] font-bold text-editorial-black/40 uppercase tracking-widest font-sans">Kelas Akademik</span>
+                  <p className="text-sm font-serif italic font-bold text-editorial-black">Kelas Reguler C</p>
+                </div>
+              </div>
+
+              {/* Big highlighted quote for UAS STIE Ekadharma Indonesia */}
+              <div className="bg-editorial-terracotta text-white border border-editorial-black p-5 relative overflow-hidden">
+                <div className="absolute right-3 bottom-1 text-white/5 font-serif font-bold text-6xl select-none uppercase pointer-events-none">
+                  UAS
+                </div>
+                <p className="text-[10px] font-bold tracking-widest uppercase text-white/80 mb-2">TUGAS BESAR AKHIR SEMESTER</p>
+                <p className="font-serif italic text-lg sm:text-xl leading-relaxed">
+                  "Website ini dibuat sebagai Ujian Akhir Semester Mata Kuliah Aplikasi Komputer Bisnis kampus STIE Ekadharma Indonesia"
+                </p>
+                <div className="mt-4 flex items-center space-x-2 text-[9px] font-bold uppercase tracking-wider text-white/90 font-mono">
+                  <BookOpen className="h-4 w-4 text-editorial-cream" />
+                  <span>STIE EKADHARMA INDONESIA • PRODI MANAJEMEN</span>
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
