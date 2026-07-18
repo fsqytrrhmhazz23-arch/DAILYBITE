@@ -22,6 +22,21 @@ export default function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    
+    const serviceLabels: { [key: string]: string } = {
+      individual: 'Katering Personal Mandiri',
+      corporate: 'Office Wellness Bento (Korporat)',
+      event: 'Katering Event / Seminar'
+    };
+
+    const serviceText = serviceLabels[formData.cateringType] || formData.cateringType;
+
+    const messageText = `Halo Admin PT. Dailybite, saya ingin menghubungi / mengajukan kerjasama katering dengan detail berikut:\n\n*Detail Kontak & Kerjasama:*\n- Nama Lengkap: ${formData.name}\n- Tipe Layanan: ${serviceText}\n- Email Bisnis: ${formData.email}\n- No. Telepon / WhatsApp: ${formData.phone}\n\n*Pesan Kebutuhan:*\n${formData.message}\n\nMohon bantu dihubungi kembali oleh pihak Dailybite. Terima kasih!`;
+    const waUrl = `https://wa.me/6285819343733?text=${encodeURIComponent(messageText)}`;
+    
+    // Open in new tab
+    window.open(waUrl, '_blank');
+
     setIsSubmitted(true);
     setTimeout(() => {
       setFormData({
