@@ -64,11 +64,11 @@ export default function Footer() {
               </li>
               <li className="flex items-center space-x-2.5">
                 <Phone className="h-4 w-4 text-editorial-terracotta shrink-0" />
-                <span>+62 (21) 5088-2940 (Kemitraan Korporat)</span>
+                <span>+62 858-1934-3733 (CS & Kemitraan)</span>
               </li>
               <li className="flex items-center space-x-2.5">
                 <Mail className="h-4 w-4 text-editorial-terracotta shrink-0" />
-                <span>info@dailybite.co.id | sales@dailybite.co.id</span>
+                <span>fsqytrrhmhazz23@gmail.com</span>
               </li>
             </ul>
           </div>

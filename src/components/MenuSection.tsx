@@ -66,7 +66,7 @@ export default function MenuSection() {
   // Draft WhatsApp order message
   const getWhatsAppLink = (menu: MenuItem, recalculated: any) => {
     const baseText = `Halo Admin PT. Dailybite, saya ingin memesan menu katering sehat berikut:\n\n*Menu:* ${menu.name}\n*Pilihan Porsi:* ${recalculated.label}\n*Energi:* ${recalculated.calories} kkal\n*Rincian Gizi:* P: ${recalculated.protein}g, C: ${recalculated.carbs}g, F: ${recalculated.fat}g\n*Harga:* Rp ${recalculated.price.toLocaleString('id-ID')}\n\nMohon dibantu info ketersediaan slot katering terdekat. Terima kasih!`;
-    return `https://wa.me/6281234567890?text=${encodeURIComponent(baseText)}`;
+    return `https://wa.me/6285819343733?text=${encodeURIComponent(baseText)}`;
   };
 
   return (
@@ -271,7 +271,7 @@ export default function MenuSection() {
                     </div>
                   </div>
                   <a
-                    href={`https://wa.me/6281234567890?text=${encodeURIComponent(`Halo, saya tertarik dengan program katering kustom: *${plan.name}* PT. Dailybite. Bagaimana langkah pendaftaran awal dan konsultasi gizinya?`)}`}
+                    href={`https://wa.me/6285819343733?text=${encodeURIComponent(`Halo, saya tertarik dengan program katering kustom: *${plan.name}* PT. Dailybite. Bagaimana langkah pendaftaran awal dan konsultasi gizinya?`)}`}
                     target="_blank"
                     rel="noreferrer"
                     className="w-full bg-editorial-black hover:bg-editorial-terracotta text-white text-center py-3 rounded-none text-[10px] font-bold tracking-[0.2em] uppercase transition-all duration-300 flex items-center justify-center gap-2 border border-editorial-black"

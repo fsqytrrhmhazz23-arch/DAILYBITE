@@ -86,7 +86,7 @@ export default function NutritionPlanner() {
     if (!result) return '';
     const goalLabel = goal === 'loss' ? 'Menurunkan Berat Badan' : goal === 'gain' ? 'Membangun Otot' : 'Menjaga Kebugaran';
     const text = `Halo Dokter Gizi PT. Dailybite, saya telah mengisi Kalkulator Gizi Mandiri:\n\n*Profil saya:*\n- Jenis Kelamin: ${gender === 'male' ? 'Pria' : 'Wanita'}\n- Umur: ${age} tahun\n- Berat: ${weight} kg / Tinggi: ${height} cm\n- Target Goal: ${goalLabel}\n\n*Hasil Kalkulator:*\n- Kalori Harian (TDEE): ${result.tdee} kkal\n- Target Kalori Diet: ${result.targetCalories} kkal\n- Kebutuhan Nutrisi: P ${result.protein}g, C ${result.carbs}g, F ${result.fat}g\n- Program Direkomendasikan: *${result.plan.name}*\n\nMohon bantu saya menyusun jadwal pengiriman menu katering sehat ini. Terima kasih!`;
-    return `https://wa.me/6281234567890?text=${encodeURIComponent(text)}`;
+    return `https://wa.me/6285819343733?text=${encodeURIComponent(text)}`;
   };
 
   return (
