@@ -1,6 +1,6 @@
 import { ShieldCheck, HeartPulse, Sparkles, ChefHat, Leaf, FileText, GraduationCap, BookOpen } from 'lucide-react';
 import { CERTIFICATIONS } from '../data/companyData';
-import fisqiyaPhoto from '../assets/images/fisqiya_asli.jpg';
+import fisqiyaPhoto from '../assets/images/fisqiya_real_upload.jpg';
 
 export default function About() {
   const pillars = [
@@ -136,12 +136,12 @@ export default function About() {
             
             {/* Student Photo Column (4 cols) */}
             <div className="lg:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left space-y-4">
-              <div className="relative aspect-square w-full max-w-[280px] bg-white border-[6px] border-editorial-black shadow-lg overflow-hidden group">
+              <div className="relative aspect-[3/4] w-full max-w-[280px] bg-white border-[6px] border-editorial-black shadow-lg overflow-hidden group">
                 <img
                   src={fisqiyaPhoto}
                   alt="Fisqiya turrohmah azzahra"
                   referrerPolicy="no-referrer"
-                  className="w-full h-full object-cover grayscale-[10%] contrast-[105%] transition-all duration-500 group-hover:grayscale-0 group-hover:scale-105"
+                  className="w-full h-full object-cover object-center transition-all duration-500 group-hover:scale-105"
                 />
                 <div className="absolute inset-x-0 bottom-0 bg-editorial-black/80 text-white text-[9px] font-bold uppercase tracking-widest text-center py-2">
                   DIPERIKSA MAHASISWA ASLI
