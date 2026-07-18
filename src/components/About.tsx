@@ -1,6 +1,6 @@
 import { ShieldCheck, HeartPulse, Sparkles, ChefHat, Leaf, FileText, GraduationCap, BookOpen } from 'lucide-react';
 import { CERTIFICATIONS } from '../data/companyData';
-import fisqiyaPhoto from '../assets/images/fisqiya_profile_real_1784353712087.jpg';
+import fisqiyaPhoto from '../assets/images/fisqiya_asli.jpg';
 
 export default function About() {
   const pillars = [
